@@ -38,7 +38,7 @@ To talk with us or with other developers about the Lungo API, suscribe to our [*
 
 EASY PROTOTYPE
 ==============
-The main premise is to create a semantic structure in the whole project, starting from the markup language HTML, through a well organized CSS and ending with the JavaScript API. Lungo offers a great facility when prototyping applications, and will not be needed to enter any lines of code (JavaScript) to visualize how our application will behave. In this doc we will learn which are Lungo semantic elements as relate to each and how you can create applications with HTML only. It's really exciting! let's begin.
+The main premise is to create a semantic structure across the whole project, starting from the markup language HTML, through a well organized CSS and ending with the JavaScript API. Lungo offers a great facility for prototyping applications, and it will not be necessary to enter any lines of code (JavaScript) to visualize how your application will behave. In this doc you will learn how Lungo semantic elements relate to each and how you can create applications with HTML only. It's really exciting! let's begin.
 
 
 Structure
@@ -53,7 +53,7 @@ Here you have the dependencies of your Lungo application's body. It must contain
 <script src="components/lungo/lungo.js"></script>
 ```
 
-`<section>` it's the main container of your UI Components in your App and `<article>` it must be placed inside your section and must have…. Each section and article must contain an unique ID. 
+`<section>` This is the main container of your UI Components in your App and `<article>` it must be placed inside your section and must have…. Each section and article must contain an unique ID. 
 ``` html
 <section id="main">
     <article id="main-article">
@@ -62,13 +62,13 @@ Here you have the dependencies of your Lungo application's body. It must contain
 </section>
 ```
 
-The JavaScript function that initializes Lungo it's:
+The JavaScript function that initializes Lungo i:
 ``` javascript
 Lungo.init({});
 ```
 
 #### Load Sync resources on init
-To make easier to create and modify your app you can create the sections in separate html files and load the synchonously, making your main file smaller and having your code organized better.
+To make it easier to create and modify your app you can create sections in separate html files and load them synchonously, thus making your main file smaller and having your code organized better.
 ``` javascript
 //Load resource on app init
 Lungo.init({
@@ -78,7 +78,7 @@ Lungo.init({
 ```
 
 #### Load async resources by link
-There is other way to load resources asynchronously, just add to the `<a>` tag element the attribute data-async with the link to the section.
+There is a way to load resources asynchronously, just add to the `<a>` tag element the attribute data-async with the link to the section.
 ``` html
 <section id="loader" data-transition="">
     <article id="art1" class="active">
@@ -104,7 +104,7 @@ A `<section>` is a view of our application where content will be displayed and w
 </section>
 ```
 
-The content a particular `<section>` is structured by `<article>`. Within a section may be as many `<article>` as you like. The article of the section that will be shown first must have th `class="active"` attribute set.
+The content of a particular `<section>` is structured by `<article>`. Within a section there may be as many `<article>` as you like. The article of the section that will be shown first must have the `class="active"` attribute set.
 
 ``` html
 <section id="main_section">
@@ -117,7 +117,7 @@ The content a particular `<section>` is structured by `<article>`. Within a sect
 
 
 ### Header
-Each `<section>` can contain a `<header>` where the tittle of the section will be shown. Optionally you can add navigation buttons, to go to another section, go back to a previous one, go to another article or just open the aside menu.
+Each `<section>` can contain a `<header>` where the title of the section will be shown. Optionally you can add navigation buttons, to go to another section, go back to a previous one, go to another article or just open the side menu.
 ``` html
 <section id="main_section">
     <header data-title="example"></header>
@@ -134,8 +134,7 @@ Each `<section>` can contain a `<footer>`. There you can add buttons to navigate
 <section id="main_section">
     <article id="main" class="active">
         {{CONTENT}}
-    </article>
-    <footer>
+    </article>ti
         <nav>
             <a href="#" data-icon="menu" class="active"></a>
             <a href="#" data-icon="share"></a>
